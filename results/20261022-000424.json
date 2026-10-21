@@ -1,0 +1,493 @@
+{
+  "summary": {
+    "model": "deepseek-flash",
+    "questions": 15,
+    "retrieval": 1.0,
+    "context": 0.9,
+    "answer": 0.8,
+    "citation": 1.0,
+    "refusal": 1.0,
+    "total_tokens": 30629,
+    "seconds": 30.5
+  },
+  "results": [
+    {
+      "id": "q01",
+      "type": "simple",
+      "question": "Who must a financial institution designate to be responsible for its technology risk management function?",
+      "answerable": true,
+      "expected_keywords": [
+        "CISO"
+      ],
+      "expected_pages": [
+        12
+      ],
+      "reference": "Para 9.4: designate a Chief Information Security Officer (CISO), independent from day-to-day technology operations.",
+      "answer": "A financial institution must designate a Chief Information Security Officer (CISO), by whatever name called, to be responsible for the technology risk management function [1].",
+      "tokens": 1921,
+      "retrieved": [
+        "S 9.4 (p12)",
+        "S 8.7 (p10,11)",
+        "S 8.3 (p9)",
+        "S 13.2 (p36,37)",
+        "3.1 (p82,83)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          12
+        ]
+      }
+    },
+    {
+      "id": "q02",
+      "type": "simple",
+      "question": "How often must a financial institution conduct a red team simulation attack on its infrastructure?",
+      "answerable": true,
+      "expected_keywords": [
+        "three years"
+      ],
+      "expected_pages": [
+        29
+      ],
+      "reference": "Para 11.6: a realistic Red Team simulation at least once every three years.",
+      "answer": "A financial institution must conduct a realistic red team simulation attack on its infrastructure at least once every three years [1].",
+      "tokens": 1979,
+      "retrieved": [
+        "S 11.4 (p28,29)",
+        "S 11.10 (p29,30)",
+        "19.2.1 (p111)",
+        "14. (p78)",
+        "2. (p71)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          28,
+          29
+        ]
+      }
+    },
+    {
+      "id": "q03",
+      "type": "simple",
+      "question": "What is the maximum tolerable downtime for critical systems that customers expect to be available immediately?",
+      "answerable": true,
+      "expected_keywords": [
+        "120 minutes",
+        "4 hours"
+      ],
+      "expected_pages": [
+        21
+      ],
+      "reference": "Para 10.32: cumulative unplanned downtime of not more than 4 hours on a rolling 12 months, and 120 minutes per incident.",
+      "answer": "For critical systems where there is a reasonable expectation of immediate service delivery to customers or dealings with counterparties, the maximum tolerable downtime is **120 minutes per incident** [1].",
+      "tokens": 1879,
+      "retrieved": [
+        "S 10.32 (p20,21)",
+        "S 10.35 (p21)",
+        "S  17.4 (p41,42)",
+        "1 (p4,5)",
+        "S 10.10 (p15)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": false,
+        "citation": true,
+        "missing_keywords": [
+          "4 hours"
+        ],
+        "missing_from_context": [],
+        "cited_pages": [
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "type": "simple",
+      "question": "What is the default daily transfer limit for new customers of digital services?",
+      "answerable": true,
+      "expected_keywords": [
+        "1,000"
+      ],
+      "expected_pages": [
+        47
+      ],
+      "reference": "Appendix 3 para 1(i): conservatively low default limit, such as RM1,000 per day, changeable via secure channels.",
+      "answer": "The default daily transfer limit for new customers must be set at a conservatively low level, such as RM 1,000 per day [1].",
+      "tokens": 1800,
+      "retrieved": [
+        "1. (p47)",
+        "3. (p48)",
+        "S 12.3 (p33,34)",
+        "S 10.31 (p20)",
+        "S 16.3 (p39)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          47
+        ]
+      }
+    },
+    {
+      "id": "q05",
+      "type": "simple",
+      "question": "What must the cryptography policy of a financial institution address?",
+      "answerable": true,
+      "expected_keywords": [
+        "key",
+        "annual"
+      ],
+      "expected_pages": [
+        17,
+        18
+      ],
+      "reference": "Para 10.20: industry-standard algorithms, key lifecycle management, at least annual review of algorithms, cryptographic inventory, key compromise-recovery plans.",
+      "answer": "Under S 10.20, a financial institution must establish a robust and resilient cryptography policy to promote the adoption of strong cryptographic controls for the protection of important data and information, and that policy must at a minimum address requirements for [2]:\n\n- (a) the adoption of industry standards for encryption algorithms, message authentication, hash functions, digital signatures and random number generation [2];\n- (b) the adoption of robust and secure processes in managing cryptographic key lifecycles, including generation, distribution, renewal, usage, storage, recovery, revocation and destruction [2];\n- (c) the periodic review, at least annually, of all cryptographic standards and algorithms currently in use for critical systems, external linked or transactional customer-facing applications, to prevent exploitation of weakened algorithms or protocols [2];\n- (d) the expansion of the IT asset inventory to include all cryptographic tools and algorithms in use, with pertinent information on the rationale for each cryptographic method employed and its mapping to supported application systems [2];\n- (e) the development and testing of compromise-recovery plans in the event of a cryptographic key compromise, setting out the escalation process, procedures for keys regeneration, interim measures (such as for quantum computing), changes to business-as-usual protocols, and containment strategies or options to minimise the impact of a compromise [2].",
+      "tokens": 1936,
+      "retrieved": [
+        "8 (p6,7)",
+        "S 10.20 (p17,18)",
+        "S 18.1 (p42,43)",
+        "S 10.21 (p18)",
+        "S 10.46 (p23)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "id": "q06",
+      "type": "simple",
+      "question": "What must a financial institution do if it needs to keep using an end-of-life or unsupported system?",
+      "answerable": true,
+      "expected_keywords": [
+        "approval",
+        "risk assessment"
+      ],
+      "expected_pages": [
+        16
+      ],
+      "reference": "Para 10.17(d): management approval for the exception, backed by a risk assessment with a phase-out timeline, reviewed at least annually.",
+      "answer": "A financial institution must obtain management approval for any exception permitting the continued use of unsupported or outdated technology [1]. That exception must be substantiated by a thorough risk assessment with a clear timeline for phasing out the outdated technology, and it must be regularly reviewed at least annually to ensure associated risks are effectively managed [1]. The institution must also establish a patch and end-of-life (EOL) management framework that addresses identification and risk assessment of technology assets for potential vulnerabilities arising from undeployed patches or EOL systems [2].",
+      "tokens": 1927,
+      "retrieved": [
+        "S 10.17 (p16)",
+        "S 10.18 (p16,17)",
+        "11. (p45,46)",
+        "S 10.44 (p23)",
+        "2. (p60,61)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "id": "q07",
+      "type": "multi-part",
+      "question": "How often must vulnerability assessments and penetration tests be performed?",
+      "answerable": true,
+      "expected_keywords": [
+        "quarterly",
+        "annual"
+      ],
+      "expected_pages": [
+        54
+      ],
+      "reference": "Appendix 5 Part D: quarterly vulnerability assessment of network components for critical systems; annual intelligence-led penetration tests, plus tests before new systems go live.",
+      "answer": "Vulnerability assessment frequency: the NCII entity’s Vulnerability Assessment Plan must define the frequency, such as monthly, quarterly, or after major updates [1]. A financial institution must perform a **quarterly** vulnerability assessment of external and internal network components that support all critical systems [2].\n\nPenetration test frequency: a financial institution must conduct **annual** intelligence-led penetration tests on its internal and external network infrastructure, critical systems, and digital services including web, mobile, and all external-facing applications [2]. It must also conduct intelligence-led penetration tests **prior to introducing new systems** for new products or services [2]. For software and system/application security, security testing must be conducted during development, followed by penetration testing **prior to deployment** in a production and/or public-facing environment [5].",
+      "tokens": 2450,
+      "retrieved": [
+        "16.2.1 (p105,106)",
+        "1. (p54)",
+        "16.1.1 (p105)",
+        "2. (p60,61)",
+        "11.2.7 (p96,97)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          54,
+          96,
+          97,
+          105,
+          106
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "type": "multi-part",
+      "question": "What must a financial institution do before adopting public cloud for critical systems for the first time?",
+      "answerable": true,
+      "expected_keywords": [
+        "consult",
+        "risk assessment",
+        "pre-implementation review"
+      ],
+      "expected_pages": [
+        40
+      ],
+      "reference": "Para 17.1: consult the Bank, after a risk assessment (Appendix 10 / Appendix 7 Part A), a readiness confirmation, and a third-party pre-implementation review.",
+      "answer": "A financial institution must consult the Bank prior to its first-time adoption of public cloud for critical systems, and during consultation demonstrate that specific risks associated with the technology have been adequately considered and addressed to the Bank’s satisfaction [1].\n\nBefore consulting the Bank, the financial institution shall:\n- Conduct a comprehensive risk assessment of the proposed cloud adoption, including possible impact and measures to address and mitigate identified risks; for public cloud, the assessment must follow the risk outlined in paragraph 10.50 and Appendix 10, and use the Risk Assessment Report format in Part A of Appendix 7 [1].\n- Provide a confirmation by the CISO, senior management officer, chairman of the board, or designated board-level committee specified in paragraph 8.3 of the institution’s readiness to adopt public cloud for critical systems, in the format set out in Part B of Appendix 7 [1].\n- Perform a third-party pre-implementation review on public cloud, encompassing the areas in Appendix 10 and Part C of Appendix 7 for higher-risk services, such as those involving processing or storage of customer information or cross-border data transmission [1].\n\nA financial institution should also ensure robust cloud governance processes are established prior to cloud adoption and are subject to ongoing review and continuous improvement [4].",
+      "tokens": 2676,
+      "retrieved": [
+        "S 17.1 (p40)",
+        "45 (p64,65)",
+        "S 17.2 (p40,41)",
+        "Appendix 10 (p64)",
+        "7. (p68,69)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          40,
+          64
+        ]
+      }
+    },
+    {
+      "id": "q09",
+      "type": "multi-part",
+      "question": "What functions must the Security Operations Centre perform, and how often must it report on threats?",
+      "answerable": true,
+      "expected_keywords": [
+        "threat hunting",
+        "monthly"
+      ],
+      "expected_pages": [
+        53,
+        54
+      ],
+      "reference": "Appendix 5 Part C: SIEM log correlation, incident response, vulnerability management, threat hunting, forensics, threat intel, playbooks; monthly threat assessment report; 24x7 operation.",
+      "answer": "The SOC must be able to perform the following functions: (a) adequate log collection and implementation of an event correlation engine with parameter-driven use cases such as SIEM; (b) incident coordination and response; (c) vulnerability management; (d) threat hunting; (e) remediation functions including forensic artifact handling, malware and implant analysis; (f) provision of situational awareness to detect adversaries and threats, including threat intelligence analysis and operations and monitoring IoCs, with advanced behavioural analysis to detect signature-less and file-less malware and identify anomalies at endpoints and network layers; and (g) a well-documented and standardized playbook covering common and plausible cyber threat scenarios, such as ransomware attacks [1].\n\nThe SOC must provide a monthly threat assessment report [5].",
+      "tokens": 1895,
+      "retrieved": [
+        "1. (p53)",
+        "S 10.26 (p19)",
+        "1. (p54)",
+        "7.2.7 (p88,89)",
+        "3. (p53,54)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": true,
+        "answer": true,
+        "citation": true,
+        "missing_keywords": [],
+        "missing_from_context": [],
+        "cited_pages": [
+          53,
+          54
+        ]
+      }
+    },
+    {
+      "id": "q10",
+      "type": "multi-part",
+      "question": "What security requirements apply to multi-factor authentication for financial transactions in digital services?",
+      "answerable": true,
+      "expected_keywords": [
+        "phishing",
+        "SMS"
+      ],
+      "expected_pages": [
+        48
+      ],
+      "reference": "Appendix 3 paras 4-6: MFA for financial and high-risk non-financial transactions, phishing-resistant, more secure than unencrypted SMS, robust verification on activation.",
+      "answer": "Multi-factor authentication (MFA) for digital financial transactions is subject to the following requirements:\n\n- MFA must form part of adequate measures to authenticate customer identity and ensure legitimate transaction authorisation, including preventing session takeover or man-in-the-middle attacks, secure session handling and authentication databases, and strong password and cryptographic implementation [2].\n- Where appropriate, financial institutions must apply multi-level authentication, out-of-band protocols and real-time verification [2].\n- Transaction authentication must promote non-repudiation and accountability, including proof of origin, content and message integrity, use of a secure delivery channel, alerting the user for further authentication, and mutual authentication or appropriate digital certification [2].\n- Registration or enrolment for digital services must be subject to robust authentication and verification [1].\n- Customers must be able to change default transfer limits via secure channels, such as online with MFA [1].\n- Financial institutions must ensure proper authentication of users or devices and authorisation of transactions to mitigate impersonation and fraud risk [4].\n\nFor MFA solutions specifically, the controls must include:\n\n- The MFA solution must be resistant to interception or manipulation by any third party throughout the authentication process [5].\n- The payer/sender must be made aware of and prompted to confirm the identified beneficiary and transaction amount [5].\n- The authentication code must be initiated and generated locally by the payer/sender using MFA [5].\n- The authentication code must be specific to the confirmed identified beneficiary and amount [5].\n- Secure underlying technology must ensure that the authentication code accepted by the financial institution corresponds to the confirmed transaction details [5].\n- Notification must be provided to the payer/sender of the transaction [5].\n\nWhere OTP is deployed as an additional authentication factor:\n\n- The OTP must be dynamic, changing each time it is required, and time-bound [5].\n- Transaction details must be bound to the OTP generated by the device, such as beneficiary account number and transaction amount [5].\n- The OTP must be generated from the customer’s device and not from the bank’s server [5].",
+      "tokens": 3099,
+      "retrieved": [
+        "1. (p47)",
+        "2. (p60,61)",
+        "3. (p48)",
+        "S 12.1 (p33)",
+        "6. (p48,49)"
+      ],
+      "checks": {
+        "refusal": true,
+        "retrieval": true,
+        "context": false,
+        "answer": false,
+        "citation": true,
+        "missing_keywords": [
+          "phishing",
+          "SMS"
+        ],
+        "missing_from_context": [
+          "phishing",
+          "SMS"
+        ],
+        "cited_pages": [
+          33,
+          47,
+          48,
+          49,
+          60,
+          61
+        ]
+      }
+    },
+    {
+      "id": "q11",
+      "type": "not-covered",
+      "question": "What is the minimum capital adequacy ratio that banks must maintain?",
+      "answerable": false,
+      "expected_keywords": [],
+      "expected_pages": [],
+      "reference": "Not in RMiT. Tricky: para 1.4(c) mentions the Bank may require additional capital, but no ratio is given.",
+      "answer": "Not covered by the provided documents.",
+      "tokens": 1668,
+      "retrieved": [
+        " (p1,2,3)",
+        "S 10.2 (p13)",
+        "S 10.44 (p23)",
+        "2. (p52)",
+        "1. (p55)"
+      ],
+      "checks": {
+        "refusal": true
+      }
+    },
+    {
+      "id": "q12",
+      "type": "not-covered",
+      "question": "What customer due diligence must banks perform under anti-money laundering rules?",
+      "answerable": false,
+      "expected_keywords": [],
+      "expected_pages": [],
+      "reference": "Not in RMiT; covered by BNM's AML/CFT policy document.",
+      "answer": "Not covered by the provided documents.",
+      "tokens": 1741,
+      "retrieved": [
+        " (p1,2,3)",
+        "1 (p4,5)",
+        "5. (p81)",
+        "14.3.3 (p102)",
+        "3. (p80,81)"
+      ],
+      "checks": {
+        "refusal": true
+      }
+    },
+    {
+      "id": "q13",
+      "type": "not-covered",
+      "question": "What is the maximum interest rate banks may charge on housing loans?",
+      "answerable": false,
+      "expected_keywords": [],
+      "expected_pages": [],
+      "reference": "Not in RMiT.",
+      "answer": "Not covered by the provided documents.",
+      "tokens": 1620,
+      "retrieved": [
+        " (p1,2,3)",
+        "6.2.3 (p86,87)",
+        "S 11.17 (p31,32)",
+        "4.1 (p83,84)",
+        "6.1.5 (p86)"
+      ],
+      "checks": {
+        "refusal": true
+      }
+    },
+    {
+      "id": "q14",
+      "type": "not-covered",
+      "question": "What is the deposit insurance coverage limit per depositor in Malaysia?",
+      "answerable": false,
+      "expected_keywords": [],
+      "expected_pages": [],
+      "reference": "Not in RMiT. Tricky: 'deposit' appears in the fraud detection appendix, so search will find loosely related chunks.",
+      "answer": "Not covered by the provided documents.",
+      "tokens": 1961,
+      "retrieved": [
+        "S 11.17 (p31,32)",
+        "1. (p47)",
+        "2. (p79,80)",
+        "2. (p79,80)",
+        "1 (p4,5)"
+      ],
+      "checks": {
+        "refusal": true
+      }
+    },
+    {
+      "id": "q15",
+      "type": "not-covered",
+      "question": "What climate-related risk disclosures must financial institutions publish?",
+      "answerable": false,
+      "expected_keywords": [],
+      "expected_pages": [],
+      "reference": "Not in RMiT. Tricky: RMiT does require quarterly disclosure of service availability, which a weak model may confuse.",
+      "answer": "Not covered by the provided documents.",
+      "tokens": 2077,
+      "retrieved": [
+        "3.1 (p82,83)",
+        "8 (p6,7)",
+        "2.2 (p3,4)",
+        "1.1 (p3)",
+        "S 8.1 (p8)"
+      ],
+      "checks": {
+        "refusal": true
+      }
+    }
+  ]
+}

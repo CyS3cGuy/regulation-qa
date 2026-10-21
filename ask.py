@@ -1,6 +1,6 @@
 """Step 2: answer a question using only the regulation chunks, with citations.
 
-Run:  uv run ask.py "What are the core functions of the AI RMF?"
+Run:  uv run ask.py "What are the requirements for the CISO?"
 Needs: chunks.json (from ingest.py) and LLM_API_KEY, LLM_BASE_URL, LLM_MODEL in .env
 """
 import json
@@ -52,9 +52,15 @@ def search(question: str, chunks: list[dict], k: int = TOP_K) -> list[dict]:
     return [chunk for _, chunk in scored[:k]]
 
 
+def pages_label(chunk: dict) -> str:
+    pages = chunk.get("pages", [chunk["page"]])
+    return f"page {pages[0]}" if len(pages) == 1 else f"pages {pages[0]}-{pages[-1]}"
+
+
 def build_context(results: list[dict]) -> str:
     return "\n\n".join(
-        f"[{i}] ({c['doc']}, page {c['page']})\n{c['text']}" for i, c in enumerate(results, start=1)
+        f"[{i}] ({c['doc']}, {c.get('label', '')}, {pages_label(c)})\n{c['text']}"
+        for i, c in enumerate(results, start=1)
     )
 
 
@@ -79,7 +85,7 @@ def answer(question: str) -> None:
     print(response.choices[0].message.content)
     print("\nSources:")
     for i, c in enumerate(results, start=1):
-        print(f"  [{i}] {c['doc']}, page {c['page']}")
+        print(f"  [{i}] {c['doc']}, {c.get('label', '')}, {pages_label(c)}")
     print(f"\nTokens used: {response.usage.total_tokens}")
 
 
