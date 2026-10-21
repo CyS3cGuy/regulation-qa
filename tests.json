@@ -1,0 +1,137 @@
+[
+  {
+    "id": "q01",
+    "type": "simple",
+    "question": "Who must a financial institution designate to be responsible for its technology risk management function?",
+    "answerable": true,
+    "expected_keywords": ["CISO"],
+    "expected_pages": [12],
+    "reference": "Para 9.4: designate a Chief Information Security Officer (CISO), independent from day-to-day technology operations."
+  },
+  {
+    "id": "q02",
+    "type": "simple",
+    "question": "How often must a financial institution conduct a red team simulation attack on its infrastructure?",
+    "answerable": true,
+    "expected_keywords": ["three years"],
+    "expected_pages": [29],
+    "reference": "Para 11.6: a realistic Red Team simulation at least once every three years."
+  },
+  {
+    "id": "q03",
+    "type": "simple",
+    "question": "What is the maximum tolerable downtime for critical systems that customers expect to be available immediately?",
+    "answerable": true,
+    "expected_keywords": ["120 minutes", "4 hours"],
+    "expected_pages": [21],
+    "reference": "Para 10.32: cumulative unplanned downtime of not more than 4 hours on a rolling 12 months, and 120 minutes per incident."
+  },
+  {
+    "id": "q04",
+    "type": "simple",
+    "question": "What is the default daily transfer limit for new customers of digital services?",
+    "answerable": true,
+    "expected_keywords": ["1,000"],
+    "expected_pages": [47],
+    "reference": "Appendix 3 para 1(i): conservatively low default limit, such as RM1,000 per day, changeable via secure channels."
+  },
+  {
+    "id": "q05",
+    "type": "simple",
+    "question": "What must the cryptography policy of a financial institution address?",
+    "answerable": true,
+    "expected_keywords": ["key", "annual"],
+    "expected_pages": [17, 18],
+    "reference": "Para 10.20: industry-standard algorithms, key lifecycle management, at least annual review of algorithms, cryptographic inventory, key compromise-recovery plans."
+  },
+  {
+    "id": "q06",
+    "type": "simple",
+    "question": "What must a financial institution do if it needs to keep using an end-of-life or unsupported system?",
+    "answerable": true,
+    "expected_keywords": ["approval", "risk assessment"],
+    "expected_pages": [16],
+    "reference": "Para 10.17(d): management approval for the exception, backed by a risk assessment with a phase-out timeline, reviewed at least annually."
+  },
+  {
+    "id": "q07",
+    "type": "multi-part",
+    "question": "How often must vulnerability assessments and penetration tests be performed?",
+    "answerable": true,
+    "expected_keywords": ["quarterly", "annual"],
+    "expected_pages": [54],
+    "reference": "Appendix 5 Part D: quarterly vulnerability assessment of network components for critical systems; annual intelligence-led penetration tests, plus tests before new systems go live."
+  },
+  {
+    "id": "q08",
+    "type": "multi-part",
+    "question": "What must a financial institution do before adopting public cloud for critical systems for the first time?",
+    "answerable": true,
+    "expected_keywords": ["consult", "risk assessment", "pre-implementation review"],
+    "expected_pages": [40],
+    "reference": "Para 17.1: consult the Bank, after a risk assessment (Appendix 10 / Appendix 7 Part A), a readiness confirmation, and a third-party pre-implementation review."
+  },
+  {
+    "id": "q09",
+    "type": "multi-part",
+    "question": "What functions must the Security Operations Centre perform, and how often must it report on threats?",
+    "answerable": true,
+    "expected_keywords": ["threat hunting", "monthly"],
+    "expected_pages": [53, 54],
+    "reference": "Appendix 5 Part C: SIEM log correlation, incident response, vulnerability management, threat hunting, forensics, threat intel, playbooks; monthly threat assessment report; 24x7 operation."
+  },
+  {
+    "id": "q10",
+    "type": "multi-part",
+    "question": "What security requirements apply to multi-factor authentication for financial transactions in digital services?",
+    "answerable": true,
+    "expected_keywords": ["phishing", "SMS"],
+    "expected_pages": [48],
+    "reference": "Appendix 3 paras 4-6: MFA for financial and high-risk non-financial transactions, phishing-resistant, more secure than unencrypted SMS, robust verification on activation."
+  },
+  {
+    "id": "q11",
+    "type": "not-covered",
+    "question": "What is the minimum capital adequacy ratio that banks must maintain?",
+    "answerable": false,
+    "expected_keywords": [],
+    "expected_pages": [],
+    "reference": "Not in RMiT. Tricky: para 1.4(c) mentions the Bank may require additional capital, but no ratio is given."
+  },
+  {
+    "id": "q12",
+    "type": "not-covered",
+    "question": "What customer due diligence must banks perform under anti-money laundering rules?",
+    "answerable": false,
+    "expected_keywords": [],
+    "expected_pages": [],
+    "reference": "Not in RMiT; covered by BNM's AML/CFT policy document."
+  },
+  {
+    "id": "q13",
+    "type": "not-covered",
+    "question": "What is the maximum interest rate banks may charge on housing loans?",
+    "answerable": false,
+    "expected_keywords": [],
+    "expected_pages": [],
+    "reference": "Not in RMiT."
+  },
+  {
+    "id": "q14",
+    "type": "not-covered",
+    "question": "What is the deposit insurance coverage limit per depositor in Malaysia?",
+    "answerable": false,
+    "expected_keywords": [],
+    "expected_pages": [],
+    "reference": "Not in RMiT. Tricky: 'deposit' appears in the fraud detection appendix, so search will find loosely related chunks."
+  },
+  {
+    "id": "q15",
+    "type": "not-covered",
+    "question": "What climate-related risk disclosures must financial institutions publish?",
+    "answerable": false,
+    "expected_keywords": [],
+    "expected_pages": [],
+    "reference": "Not in RMiT. Tricky: RMiT does require quarterly disclosure of service availability, which a weak model may confuse."
+  }
+]
